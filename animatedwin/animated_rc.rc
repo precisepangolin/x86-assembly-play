@@ -1,0 +1,26 @@
+#include "\masm32\include\resource.h"
+
+; #######################################################################
+
+MAINSCREEN DIALOG DISCARDABLE  29, 28, 307, 200
+STYLE DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Testing animated window"
+FONT 10, "Verdana"
+BEGIN
+    GROUPBOX        "Left",
+                    IDC_STATIC,7,7,294,33,BS_LEFT | BS_FLAT
+    CTEXT           "testing",
+                    IDC_STATIC,14,16,280,18,SS_CENTERIMAGE
+	GROUPBOX        "Center",
+					IDC_STATIC,7,43,294,33,BS_CENTER | BS_MULTILINE
+    CTEXT           "testing2",
+                    IDC_STATIC,14,53,280,18,SS_CENTERIMAGE
+	GROUPBOX        "Right",
+					IDC_STATIC,7,77,294,50,BS_RIGHT | BS_FLAT | BS_MULTILINE
+    CTEXT           "testing33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+                    IDC_STATIC,14,87,280,18,SS_CENTERIMAGE
+
+END
+
+; #######################################################################
+
